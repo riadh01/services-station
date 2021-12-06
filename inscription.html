@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="utf-8" /> -->
+        
+        <title>Station de  Services </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="scriptp.js"></script>
+           <!-- Bootstrap core JS-->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+     
+
+    </head>
+    <body>
+        <header>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark main_box">
+            <div class="container">
+               
+                <a class="navbar-brand" href="#!"><i class="fal fa-car-wash"></i> Inscription  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="Acceuil.html">Acceuil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Connexion.html">Connexion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Inscription </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contactez-Nous</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <!-- Page header with logo and tagline-->
+            <div class="container">
+                
+                <div class="text-center my-5"><br>
+                    <div class="row">
+                    <h1 class="fw-bolder" style="color: red;">Inscription !</h1>
+                    <p class="lead mb-0" style="color:rgb(30, 167, 201);">Ici vous pouvez faire  votre  Inscription</p>
+                </div>
+            </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <!-- <div class="card mb-4" > -->
+                        <div style="background-color: white; margin-bottom: 100px;" >
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="img1.jpg" class="d-block w-100" alt="..." style="width: 400px; height: 400px; margin-top: 50px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img2.jpg" class="d-block w-100" alt="..." style="width: 400px; height: 400px; margin-top: 50px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img3.jpg" class="d-block w-100" alt="..." style="width: 400px; height: 400px; margin-top: 50px;">
+                              </div>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                          
+                            <!-- Blog post-->
+                          
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                        
+                            <!-- Blog post-->
+                         
+                        </div>
+                    </div>
+                    <!-- Pagination-->
+                   
+
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Registration t-->
+                  
+                    <h3>Merci de s'inscrire pour Accéder a notre services: </h3>
+                    <div><br>
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control"  onkeyup="validateOnlyTextField(this)" id="firstName" name="name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'">
+                            <span id="firstNameError"></span><br>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control" onkeyup="validateOnlyTextField(this)" id="lastName" name="name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'">
+                            <span id="lastNameError"></span><br>
+
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="email" class="form-control" id="email" name="name" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
+                            <span id="emailError"></span>
+                            <span id="emailExistError"></span><br>
+
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="password" class="form-control" id="password" name="name" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                            <span id="passwordError"></span><br>
+
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="password" class="form-control" id="confirmPwd" name="name" placeholder="Confirm password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm password'">
+                            <span id="confirmPasswordError"></span><br>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="tel" class="form-control" id="tel" name="name" placeholder="Tel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tel'">
+                            <span id="telError"></span><br>
+                        </div>
+                        
+                        <div class="col-md-12 form-group">
+                            <button type="submit" value="submit" class="primary-btn bt3" onclick="signup()" style="margin-left: 150px; " >S'inscrire</button><br>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Fin registration -->
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+        </footer>
+     
+   
+        <script>
+            var adminsAdded = localStorage.getItem("adminsAdded");
+            if (adminsAdded) {
+                
+            } else {
+                insertAdmins();
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="utf-8" /> -->
+        
+        <title>Station de  Services </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="scriptp.js"></script>
+           <!-- Bootstrap core JS-->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark main_box">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><i class="fas fa-users-cog" ><a class="nav-link" href="dashboardadmin.html"></a></i> Administrateur  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="Acceuil.html">Acceuil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Connexion.html">Connexion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Ajoutproduit.html">ajouter produit </a></li>
+                        <li class="nav-item"><a class="nav-link" href="Ajoutemployer.html">ajouter employer </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contactez-Nous</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder" style="color: red;">bienvenue Dashboard Admin</h1>
+                    <p class="lead mb-0">Ici vous Pouvez ajouter des poroduit dans le stock  ou effacer et ajouter   de   utilisateur.</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    
+                        </div>
+                    </div>
+                    <!-- Pagination-->
+                    
+              <!-- ==============================affichage  produit e  user ================================================================ -->
+              <section class="login_box_area section_gap">
+                <div class="container">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Utilisateur</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Produits</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#reservation" type="button" role="tab" aria-controls="reservation" aria-selected="false">Reservation</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#employer" type="button" role="tab" aria-controls="employer" aria-selected="false">employers</button>
+                          </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <!-- div users -->
+                            <div id="usersTable">
+                                <script>
+                                    displayUsers();
+                                    
+                                
+        
+                                </script>		
+                    
+                               
+                
+                            
+                            </div>
+                    <div id="edituser">
+                            
+                        </div>
+                    
+                    </div>
+        
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <!-- div products -->
+        
+                            <div id="productsTable">
+                              <script>
+                                displayProduct();
+                            
+                             </script>
+        
+        
+                            </div>
+                            <div id="editproduct">
+                        </div>
+                    </div>
+<!-- resrvation -->
+<div class="tab-pane fade" id="reservation" role="tabpanel" aria-labelledby="profile-tab">
+    <!-- div products -->
+
+    <div id="reservTab">
+      <script>
+      displayReservation();
+    
+     </script>
+
+
+    </div>
+    <div id="editReservation">
+</div>
+</div>       
+<!-- =========employer========= -->
+<div class="tab-pane fade" id="employer" role="tabpanel" aria-labelledby="profile-tab">
+    <!-- div products -->
+
+    <div id="employersTab">
+      <script>
+      displayEmployer();
+    
+     </script>
+
+
+    </div>
+    <div id="editEmployer">
+</div>
+</div> 
+<!-- ================== -->
+
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            cccc
+                        
+                     
+                    </div>
+                </div>
+            </section>
+              <!-- =============================================================================================== -->
+              
+            </div>
+        </div><br>
+        <!-- Footer-->
+       
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        
+    </body>
+</html>
